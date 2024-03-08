@@ -40,7 +40,7 @@ docker build -t excalidraw-mermaid .
 ```
 - Run the container:
 ```
-docker run -d -p EXTERNALPORT:1234 --name excalidraw-mermaid excalidraw-mermaid
+docker run -d -p EXTERNALPORT:1234 --name excalidraw-mermaid-docker --restart unless-stopped excalidraw-mermaid-docker
 ```
 - Access the application via browser on
 ```
