@@ -7,12 +7,10 @@ Dockerized version of the repo mermaid-to-excalidraw. Use to host a local instan
 - ![image](https://github.com/gitchrishan/mermaid-to-excalidraw-docker/assets/43588713/d85859f1-afcd-4e93-ad87-1be65e481492)
 
 # Steps to run
-# Docker Hub
-Docker run:
-
+<b>Docker run:</b>
 <code>docker run -d -p {EXTERNALPORT}:1234 --name excalidraw-mermaid-docker chrishancode/excalidraw-mermaid-docker:latest</code>
 
-Docker compose:
+<b>Docker compose:</b>
 
 <code>version: '3.9'
 services:
@@ -23,6 +21,7 @@ excalidraw-mermaid-docker:
         - '{EXTERNALPORT}:1234'
 </code>
 
+<b>Local image:</b>
 - Clone the repository: <code>git clone https://github.com/gitchrishan/mermaid-to-excalidraw-docker.git</code>
 - cd to the Directory
 - Build the image: <code>docker build -t excalidraw-mermaid .</code>
