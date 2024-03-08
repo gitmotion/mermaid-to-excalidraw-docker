@@ -4,6 +4,7 @@ Dockerized version of the repo mermaid-to-excalidraw. Use to host a local instan
 Steps to run:
 - cd to the Directory
 - Build the image
-docker build -t excalidraw-mermaid .
+<code>docker build -t excalidraw-mermaid .</code>
+
 - Run the container
-docker run -d -p {ExternalPort}:{InternalPort} --name excalidraw-mermaid excalidraw-mermaid
+<code>docker run -d -p {ExternalPort}:{InternalPort} --name excalidraw-mermaid excalidraw-mermaid</code>
