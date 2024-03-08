@@ -36,7 +36,7 @@ cd mermaid-to-excalidraw-docker
 ```
 - Build the image:
 ```
-docker build -t excalidraw-mermaid .
+docker build -t excalidraw-mermaid-docker .
 ```
 - Run the container:
 ```
