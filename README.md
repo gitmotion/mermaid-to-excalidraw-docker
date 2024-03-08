@@ -8,22 +8,23 @@ Dockerized version of the repo mermaid-to-excalidraw. Use to host a local instan
 
 # Steps to run
 <b>Docker run:</b>
-<code>docker run -d -p {EXTERNALPORT}:1234 --name excalidraw-mermaid-docker chrishancode/excalidraw-mermaid-docker:latest</code>
+<code>docker run -d -p EXTERNALPORT:1234 --name excalidraw-mermaid-docker --restart unless-stopped chrishancode/excalidraw-mermaid-docker:latest</code>
 
 <b>Docker compose:</b>
 
 <code>version: '3.9'
 services:
-excalidraw-mermaid-docker:
-    image: 'chrishancode/excalidraw-mermaid-docker:latest'
-    container_name: excalidraw-mermaid-docker
-    ports:
-        - '{EXTERNALPORT}:1234'
+    excalidraw-mermaid-docker:
+        image: 'chrishancode/excalidraw-mermaid-docker:latest'
+        restart: unless-stopped
+        container_name: excalidraw-mermaid-docker
+        ports:
+            - 'EXTERNALPORT:1234'
 </code>
 
 <b>Local image:</b>
 - Clone the repository: <code>git clone https://github.com/gitchrishan/mermaid-to-excalidraw-docker.git</code>
 - cd to the Directory
 - Build the image: <code>docker build -t excalidraw-mermaid .</code>
-- Run the container: <code>docker run -d -p {ExternalPort}:1234 --name excalidraw-mermaid excalidraw-mermaid</code>
+- Run the container: <code>docker run -d -p EXTERNALPORT:1234 --name excalidraw-mermaid excalidraw-mermaid</code>
 - Access the application via browser on <code>localhost:{ExternalPort}</code>
