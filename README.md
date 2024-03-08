@@ -6,4 +6,4 @@ Steps to run:
 - Build the image
 docker build -t excalidraw-mermaid .
 - Run the container
-docker run -d -p <ExternalPort>:<InternalPort> --name excalidraw-mermaid excalidraw-mermaid
+docker run -d -p {ExternalPort}:{InternalPort} --name excalidraw-mermaid excalidraw-mermaid
