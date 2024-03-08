@@ -8,7 +8,7 @@ Use to host a local instance of mermaid-to-excalidraw, allowing you to keep your
 - ![image](https://github.com/gitchrishan/mermaid-to-excalidraw-docker/assets/43588713/d85859f1-afcd-4e93-ad87-1be65e481492)
 
 # Steps to run
-<b>Docker run:</b>
+<b>Docker run:</b> https://hub.docker.com/r/chrishancode/excalidraw-mermaid-docker
 ```
 docker run -d -p EXTERNALPORT:1234 --name excalidraw-mermaid-docker --restart unless-stopped chrishancode/excalidraw-mermaid-docker:latest
 ```
