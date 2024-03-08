@@ -1,7 +1,7 @@
 # mermaid-to-excalidraw-docker
 Dockerized version of the repo mermaid-to-excalidraw https://github.com/excalidraw/mermaid-to-excalidraw. 
 Use to host a local instance of mermaid-to-excalidraw, allowing you to keep your diagrams & data private from companies.
-- mermaid-to-excalidraw accepts the mermaid.js markdown
+- mermaid-to-excalidraw accepts the mermaid.js markdown to create an interactable diagram on excalidraw
 - you can use AI / OpenAI to create the markdown (preferrably with a licensed agreement so companies will not use your data)
 - ![image](https://github.com/gitchrishan/mermaid-to-excalidraw-docker/assets/43588713/c5f9324f-565d-45b7-9da1-e7baa74dd153)
 - then plug that into the local instance of mermaid-to-excalidraw
